@@ -67,9 +67,10 @@ input[type="search"]::placeholder{
     gap: 10px;
 }
 
-.inputAdd > span{
+.inputAdd > button{
     border: 2px solid #333;
     padding: 7px;
+    background-color: #1F2024;
 
 }
 
