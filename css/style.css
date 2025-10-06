@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+/*---------------- CONFIGURAÇÕES GLOBAIS --------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Alan Sans", sans-serif;
+}
+
+body{
+    background-color: #1F2024;
+}
+
+/*-----------------------------------------------------*/
+
+/*----------- CONFIGURAÇÕES DO HEADER ----------------*/
+header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #333;
+    padding: 10px;
+}
+
+header h1{
+    color: #fff;
+}
+
+.PesquisaNota{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.PesquisaNota input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    height: 30px;
+    width: 300px;
+}
+
+#btnExportarCSV{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+input[type="search"]::placeholder{
+    color: #aaa;
+    font-size: 15px;
+}
+
+/*--------------------------------------------------*/
+
+/*--------- CONFIGURAÇÕES MAIN --------------------- */
+
+.inputAdd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.inputAdd > span{
+    border: 2px solid #333;
+    padding: 7px;
+
+}
+
+.inputAdd input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    background-color: #1F2024;
+    color: #fff;
+    width: 300px;
+}
