@@ -100,7 +100,7 @@ function editarNota(id){
     })
 
     textAreaEdicao.addEventListener('keypress', (e) => {
-       if(e.target.key === 'Enter'){
+       if(e.key === 'Enter'){
         e.preventDefault();
         textAreaEdicao.blur();
        }
