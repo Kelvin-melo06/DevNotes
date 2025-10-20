@@ -55,6 +55,28 @@ input[type="search"]::placeholder{
     font-size: 15px;
 }
 
+@media (max-width: 620px){
+    .PesquisaNota input{
+        width: 200px;
+        padding: 10px;
+    }
+    .PesquisaNota{
+        position: relative;
+        right: 10px;
+    }
+    header{
+        position: relative;
+    }
+    header h1{
+        position: relative;
+        right: 10px;
+        font-size: 22px;
+    }
+    .notasAdd{
+        justify-content: center;
+    }
+}
+
 /*--------------------------------------------------*/
 
 /*--------- CONFIGURAÇÕES MAIN --------------------- */
@@ -87,7 +109,6 @@ input[type="search"]::placeholder{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: flex-start;
 }
 
 .nota{
