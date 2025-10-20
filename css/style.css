@@ -57,7 +57,7 @@ input[type="search"]::placeholder{
 
 @media (max-width: 620px){
     .PesquisaNota input{
-        width: 200px;
+        width: 130px;
         padding: 10px;
     }
     .PesquisaNota{
