@@ -1,7 +1,9 @@
 const inputAddNota = document.getElementById('iAddNota');
+const inputPesquisa = document.getElementById('iPesquisa');
 const btnAddNota = document.getElementById('btnAddNota');
 const sectionNotas = document.querySelector('.notasAdd');
 
+// -------- Storage --------
 function pegarNotasStorage(){
     const notas = localStorage.getItem('DevNotes');
     return notas ? JSON.parse(notas) : [];
@@ -11,8 +13,9 @@ function salvarNotasStorage(notas){
     localStorage.setItem('DevNotes', JSON.stringify(notas));
 }
 
-function renderizarNotas(){
-    const notas = pegarNotasStorage();
+// -------- Renderização --------
+function renderizarNotas(notasFiltradas = null){
+    const notas = notasFiltradas || pegarNotasStorage();
 
     sectionNotas.innerHTML = '';
 
@@ -35,13 +38,14 @@ function renderizarNotas(){
     });
 }
 
+// -------- Funções das Notas --------
 function adicionarNota(){
     const textoNota = inputAddNota.value.trim();
     if(textoNota === '') return;
 
     const notas = pegarNotasStorage();
     const novaNota = {
-        id: Date.now(),
+        id: Date.now().toString(),
         texto: textoNota,
         fixada: false
     };
@@ -79,11 +83,10 @@ function copiarNota(id){
 
 function editarNota(id){
     const todasNotas = pegarNotasStorage();
-
     const notaParaEditar = todasNotas.find(n => n.id == id);
     if(!notaParaEditar) return;
 
-    const divNota = document.querySelector(`.nota[data-id = ${id}]`);
+    const divNota = document.querySelector(`.nota[data-id="${id}"]`);
     if(!divNota) return;
 
     const pTexto = divNota.querySelector('p');
@@ -97,18 +100,33 @@ function editarNota(id){
         notaParaEditar.texto = textAreaEdicao.value.trim();
         salvarNotasStorage(todasNotas);
         renderizarNotas();
-    })
+    });
 
     textAreaEdicao.addEventListener('keypress', (e) => {
-       if(e.key === 'Enter'){
-        e.preventDefault();
-        textAreaEdicao.blur();
-       }
-
-    textAreaEdicao.focus();   
+        if(e.key === 'Enter'){
+            e.preventDefault();
+            textAreaEdicao.blur();
+        }
     });
+
+    textAreaEdicao.focus();
 }
 
+function fixarNota(id){
+    const todasNotas = pegarNotasStorage();
+    const notaFixar = todasNotas.find(n => n.id == id);
+    if(!notaFixar) return;
+
+    notaFixar.fixada = !notaFixar.fixada;
+
+    // Ordena para mostrar fixadas primeiro
+    todasNotas.sort((a,b) => b.fixada - a.fixada);
+
+    salvarNotasStorage(todasNotas);
+    renderizarNotas();
+}
+
+// -------- Botão clicado (event delegation) --------
 function botaoClicado(e){
     const notaId = e.target.closest('.nota')?.dataset.id;
     if(!notaId) return;
@@ -124,13 +142,30 @@ function botaoClicado(e){
     }
 }
 
+// -------- Pesquisa --------
+function pesquisarNotas(){
+    const todasNotas = pegarNotasStorage();
+    const textoPesquisa = inputPesquisa.value.trim().toLowerCase();
 
+    const notasFiltradas = todasNotas.filter(nota => 
+        nota.texto.toLowerCase().includes(textoPesquisa)
+    );
+
+    renderizarNotas(notasFiltradas);
+}
+
+// -------- Eventos --------
 btnAddNota.addEventListener('click', adicionarNota);
 
-inputAddNota.addEventListener('keypress', function(e){
+inputAddNota.addEventListener('keypress', (e) => {
     if(e.key === 'Enter'){
         adicionarNota();
     }
 });
 
 sectionNotas.addEventListener('click', botaoClicado);
+
+inputPesquisa.addEventListener('input', pesquisarNotas);
+
+// -------- Inicialização --------
+renderizarNotas();

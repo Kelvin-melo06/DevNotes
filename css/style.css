@@ -82,3 +82,64 @@ input[type="search"]::placeholder{
     color: #fff;
     width: 300px;
 }
+
+.notasAdd{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.nota{
+    color: rgb(143, 136, 136);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 2px solid #333;
+    width: 340px;
+    padding: 10px;
+}
+
+.nota p{
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.btnEditar, 
+.btnRemover,
+.btnFixar,
+.btnCopiar{
+    margin-left: 8px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    transition: all 0.3s ease; /* animação suave */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* sombra inicial */
+}
+
+.btnEditar:hover {
+    background-color: #4caf50;  /* verde */
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.btnRemover:hover {
+    background-color: #f44336;  /* vermelho */
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.btnFixar:hover {
+    background-color: #ff9800;  /* laranja */
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.btnCopiar:hover {
+    background-color: #2196f3;  /* azul */
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
