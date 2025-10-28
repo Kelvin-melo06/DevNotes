@@ -1,4 +1,4 @@
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=30&pause=1000&color=009688&width=435&lines=%F0%9F%96%A5%F0%9F%96%B1+Dev+Notes)](https://git.io/typing-svg)
+## <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=30&pause=1000&color=009688&width=435&lines=%F0%9F%96%A5%F0%9F%96%B1+Dev+Notes" alt="Typing SVG" /></a>
 
 O *DevNotes* é um aplicativo simples e funcional de anotações, desenvolvido com *HTML, CSS e JavaScript puro, que permite ao usuário **criar, editar, remover, copiar, fixar e pesquisar notas* diretamente no navegador — tudo isso sem precisar de banco de dados externo.  
 
@@ -6,7 +6,7 @@ As notas são salvas automaticamente no *LocalStorage*, garantindo que nada se p
 
 ---
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=30&pause=1000&color=009688&width=435&lines=%F0%9F%A4%96%F0%9F%A6%BE+Funcionalidades)](https://git.io/typing-svg)
+## <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=30&pause=1000&color=009688&width=435&lines=%E2%8C%A8%F0%9F%94%8D+Funcionalidades" alt="Typing SVG" /></a>
 
 - 🆕 *Adicionar notas*: Crie novas anotações digitando o texto e clicando no botão de adicionar (ou pressionando Enter).  
 - ✏ *Editar notas*: Clique no ícone de lápis para editar o conteúdo de uma nota já existente.  
@@ -18,7 +18,7 @@ As notas são salvas automaticamente no *LocalStorage*, garantindo que nada se p
 
 ---
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=30&pause=1000&color=009688&width=435&lines=%F0%9F%A7%A0+Estrutura+do+Projeto)](https://git.io/typing-svg)
+## <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=25&pause=1000&color=009688&width=435&lines=%F0%9F%A4%96%F0%9F%A7%A0+Estrutura+Do+Projeto" alt="Typing SVG" /></a>
 
 O código está dividido em seções bem definidas para manter a organização e a clareza:
 
@@ -33,7 +33,7 @@ O código está dividido em seções bem definidas para manter a organização e
 
 ---
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=30&pause=1000&color=009688&width=435&lines=%E2%9A%99%EF%B8%8F+Tecnologias+utilizadas)](https://git.io/typing-svg)
+## <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=25&pause=1000&color=009688&width=435&lines=%F0%9F%8E%A9%F0%9F%92%BC+Tecnologias+Utilizadas" alt="Typing SVG" /></a>
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
@@ -48,7 +48,7 @@ O código está dividido em seções bem definidas para manter a organização e
 
 ---
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=30&pause=1000&color=009688&width=435&lines=%F0%9F%A7%A9+L%C3%B3gica+de+funcionamento)](https://git.io/typing-svg)
+## <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=25&pause=1000&color=009688&width=435&lines=%F0%9F%8C%AA%EF%B8%8F+Logica+de+funcionamento" alt="Typing SVG" /></a>
 
 1. O usuário digita uma nota e clica em “Adicionar”.  
 2. Essa nota é transformada em um *objeto JavaScript* e armazenada dentro de um *array*.  
@@ -58,7 +58,7 @@ O código está dividido em seções bem definidas para manter a organização e
 
 ---
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=30&pause=1000&color=009688&width=435&lines=%F0%9F%92%A1+Conceitos+aplicados)](https://git.io/typing-svg)
+## <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=25&pause=1000&color=009688&width=435&lines=%F0%9F%8E%B2+Conceitos+Aplicados" alt="Typing SVG" /></a>
 
 - Manipulação do *DOM* com document.createElement, appendChild, replaceChild, e dataset.
 - Armazenamento de dados com *LocalStorage*.
@@ -68,7 +68,7 @@ O código está dividido em seções bem definidas para manter a organização e
 
 ---
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=30&pause=1000&color=009688&width=435&lines=%F0%9F%A7%A0+Aprendizados+do+projeto)](https://git.io/typing-svg)
+## <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Bitcount+Grid+Single&size=25&pause=1000&color=009688&width=435&lines=%E2%99%A3%EF%B8%8F+Aprendizado" alt="Typing SVG" /></a>
 
 > “Esse projeto me ensinou a importância de entender o *fluxo completo dos dados* — desde o momento em que o usuário digita algo até isso se transformar em um elemento visual e ser salvo no navegador. Também aprendi a usar métodos de array de forma prática e a manipular o DOM com mais confiança.”
 
